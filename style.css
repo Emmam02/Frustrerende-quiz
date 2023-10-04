@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Courier New', monospace, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at 50% 50%, #24575c, #297d84, #29a7b1, #2bd0dc, #48e1ec, #69eff8, #8ff9ff);
+}
+
+.app {
+    background-color: white;
+    max-width: 1200px;
+    margin: 100px auto 0;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.app h1{
+    font-size: 60px;
+    font-weight: 600;
+    border-bottom: 5px solid #29a7b1;
+    padding-bottom: 10px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2{
+    font-size: 35px;
+}
+
+.buttin {
+    background: radial-gradient(circle at 50% 50%, #24575c, #297d84, #29a7b1, #2bd0dc, #48e1ec, #69eff8, #8ff9ff);
+    color: black;
+    font-weight: 500;
+    font-size: x-large;
+    width: 100%;
+    border: 1px solid black;
+    padding: 20px ;
+    margin: 10px 0;
+    text-align: left;
+    border-radius:8px;
+    cursor:help;
+    transition: all 1.0s;
+}
+
+.buttin:hover:not(:disabled){
+    background: #00eeff;
+}
+.buttin:disabled{
+    cursor: not-allowed;
+}
+
+#nextQuestion {
+    background: radial-gradient(circle at 50% 50%,   #2bd0dc, #48e1ec, #69eff8, #8ff9ff);
+    color: black;
+    font-weight: 500;
+    font-size: x-large;
+    width: 20%;
+    border: 1px solid black;
+    padding: 10px ;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: left;
+    border-radius:8px;
+    display: none;
+    cursor: grab;
+}
+#nextQuestion:hover {
+    background: #8ff9ff;
+}
+
+.correct {
+    background: rgb(106, 215, 106) !important;
+}
+
+.incorrect {
+    background: rgb(232, 84, 84) !important;
+}
